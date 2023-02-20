@@ -1,0 +1,37 @@
+@import url(variables.css);
+
+footer {
+    border-top: 1px solid #dce0e5;
+    padding: 4rem 0;
+    margin-top: var(--s-5);
+}
+footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-4);
+    justify-content: center;
+    align-items: center;
+
+}
+@media only screen and (min-width: 650px) {
+    footer .container {
+        width: 60%;
+    }
+}
+.footer_header {
+    /* margin-bottom: var(--s-4); */
+    text-align: center;
+}
+.footer_header .title {
+    margin-bottom: var(--s-3);
+}
+.footer_links {
+    gap: var(--s-3);
+    flex-wrap: wrap;
+}
+.footer_links .footer_links_item {
+    transition: all 0.2s ease;
+}
+.footer_links .footer_links_item:hover {
+    text-decoration: underline;
+}
